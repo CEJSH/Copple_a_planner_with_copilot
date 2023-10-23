@@ -46,7 +46,7 @@ class SummaryResponse(BaseModel):
 @app.get("/summarize_node_data/{user_id}")
 async def summarize_node_data(user_id: str):
     # Node.js 서버의 엔드포인트 URL
-    node_url = f'http://3.39.153.9:3000/goal/summary2/{user_id}'  # 사용자 ID에 따라 요청 URL 구성
+    node_url = f'http://localhost:8000/goal/summary2/{user_id}'  # 사용자 ID에 따라 요청 URL 구성
 
     try:
         # Node.js 서버에 GET 요청 보내기

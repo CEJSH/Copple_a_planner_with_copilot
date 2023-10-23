@@ -41,7 +41,7 @@ const MainPage = () => {
       const selectedDateString = format(selectedDate, "yyyy-MM-dd"); // 시간 정보를 제외하고 날짜만 보내기
 
       console.log("메인페이지날짜 :", selectedDateString);
-      const response = await axios.get(`http://3.39.153.9:3000/event/read`, {
+      const response = await axios.get(`http://localhost:8000/event/read`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setEventsForSelectedDate(response.data);

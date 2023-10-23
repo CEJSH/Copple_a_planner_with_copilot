@@ -14,7 +14,7 @@ function ThumbnailList({ goals: initialGoals, id }) {
         const tokenString = document.cookie;
         const token = tokenString.split("=")[1];
 
-        const response = await axios.get("http://3.39.153.9:3000/goal/read", {
+        const response = await axios.get("http://localhost:8000/goal/read", {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,

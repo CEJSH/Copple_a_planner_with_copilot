@@ -22,7 +22,7 @@ function Todo() {
     const token = tokenstring.split("=")[1];
     await axios({
       method: "get",
-      url: `http://3.39.153.9:3000/todo/read/${event_id}`,
+      url: `http://localhost:8000/todo/read/${event_id}`,
       withCredentials: false,
       headers: {
         "Access-Control-Allow-Origin": "*",
@@ -54,8 +54,8 @@ function Todo() {
       const tokenstring = document.cookie;
       const token = tokenstring.split("=")[1];
       const url = event_id
-        ? `http://3.39.153.9:3000/todo/${event}/${event_id}`
-        : `http://3.39.153.9:3000/todo/${event}`;
+        ? `http://localhost:8000/todo/${event}/${event_id}`
+        : `http://localhost:8000/todo/${event}`;
       await axios({
         method: method,
         url: url,

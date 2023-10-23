@@ -64,8 +64,8 @@ function WeeklyCalendar() {
           // if (selectedDate) {
           const response = await axios({
             method: "GET",
-            // url: `http://3.39.153.9:3000/event/readByDate/${selectedDate}`,
-            url: `http://3.39.153.9:3000/event/readByDate/${formattedDay}`,
+            // url: `http://localhost:8000/event/readByDate/${selectedDate}`,
+            url: `http://localhost:8000/event/readByDate/${formattedDay}`,
             headers: {
               Authorization: `Bearer ${token}`,
             },

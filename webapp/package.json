@@ -84,5 +84,5 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "proxy": "http://3.39.153.9:3000/"
+  "proxy": "http://localhost:8000/"
 }

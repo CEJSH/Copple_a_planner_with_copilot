@@ -22,7 +22,7 @@ const Selectop = () => {
     const token = tokenstring.split("=")[1];
     await axios({
       method: "GET",
-      url: "http://3.39.153.9:3000/goal/read",
+      url: "http://localhost:8000/goal/read",
       withCredentials: false, // 쿠키를 사용하므로 true로 설정
       headers: {
         "Access-Control-Allow-Origin": "*",

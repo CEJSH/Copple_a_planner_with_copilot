@@ -34,7 +34,7 @@ const Timeline = ({ eventsProp = [] }) => {
       const tokenString = document.cookie;
       const token = tokenString.split("=")[1];
       await axios.put(
-        `http://3.39.153.9:3000/event/update/${eventId}`,
+        `http://localhost:8000/event/update/${eventId}`,
         { title: newTitle },
         {
           headers: {
@@ -61,7 +61,7 @@ const Timeline = ({ eventsProp = [] }) => {
       const tokenString = document.cookie;
       const token = tokenString.split("=")[1];
       const response = await axios.get(
-        `http://3.39.153.9:3000/todo/read?page=${page}`,
+        `http://localhost:8000/todo/read?page=${page}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -97,7 +97,7 @@ const Timeline = ({ eventsProp = [] }) => {
       try {
         const tokenString = document.cookie;
         const token = tokenString.split("=")[1];
-        await axios.delete(`http://3.39.153.9:3000/event/delete/${eventId}`, {
+        await axios.delete(`http://localhost:8000/event/delete/${eventId}`, {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,

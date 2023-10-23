@@ -840,11 +840,11 @@ app.get("/event/readByDate/:date", requireLogin, async (req, res) => {
       user_id: item.UserId.S,
       eventType: item.EventType.S,
       title: item.Title.S,
-      startDatetime: item.StartDatetime.S,
-      endDatetime: item.EndDatetime.S,
+      startDatetime: item.StartDatetime ? item.StartDatetime.S : null,
+      endDatetime: item.EndDatetime ? item.EndDatetime.S : null,
       goal: item.Goal ? item.Goal.S : null,
-      location: item.Location.S ? item.Location.S : null,
-      content: item.Content.S ? item.Content.S : null
+      location: item.Location ? item.Location.S : null,
+      content: item.Content ? item.Content.S : null
     }));
     return res.json(events);
   } catch (error) {

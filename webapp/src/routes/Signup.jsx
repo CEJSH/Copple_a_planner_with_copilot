@@ -28,7 +28,7 @@ function Signup() {
     e.preventDefault();
     await axios({
       method: "post",
-      url: "http://3.39.153.9:3000/account/signup",
+      url: "http://localhost:8000/account/signup",
       data: {
         user_id: id,
         password: pw,

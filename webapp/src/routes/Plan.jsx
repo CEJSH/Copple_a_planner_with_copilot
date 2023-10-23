@@ -45,7 +45,7 @@ function Plan() {
     try {
       const tokenstring = document.cookie;
       const token = tokenstring.split("=")[1];
-      const url = `http://3.39.153.9:3000/event/${event}`;
+      const url = `http://localhost:8000/event/${event}`;
       await axios({
         method: method,
         url: url,

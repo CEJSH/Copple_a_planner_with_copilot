@@ -21,7 +21,7 @@ function PlanListPage() {
   const token = tokenstring.split("=")[1];
 
   if (event_id) {
-    const url = `http://3.39.153.9:3000/event/groupByGoal/${event_id}`;
+    const url = `http://localhost:8000/event/groupByGoal/${event_id}`;
     axios
       .get(url, {
         headers: {

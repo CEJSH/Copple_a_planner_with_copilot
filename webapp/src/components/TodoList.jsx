@@ -53,13 +53,13 @@ function TodoList() {
         const token = tokenString.split("=")[1];
 
         const [tasksResponse, goalsResponse] = await Promise.all([
-          axios.get("http://3.39.153.9:3000/todo/read", {
+          axios.get("http://localhost:8000/todo/read", {
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ${token}`,
             },
           }),
-          axios.get("http://3.39.153.9:3000/goal/read", {
+          axios.get("http://localhost:8000/goal/read", {
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ${token}`,
@@ -124,7 +124,7 @@ function TodoList() {
       const token = tokenString.split("=")[1];
 
       const response = await axios.put(
-        `http://3.39.153.9:3000/event/update/${id}`,
+        `http://localhost:8000/event/update/${id}`,
         {
           title: editingText,
         },
@@ -163,7 +163,7 @@ function TodoList() {
         const token = tokenString.split("=")[1];
 
         const response = await axios.delete(
-          `http://3.39.153.9:3000/todo/delete/${id}`,
+          `http://localhost:8000/todo/delete/${id}`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -190,7 +190,7 @@ function TodoList() {
       const tokenString = document.cookie;
       const token = tokenString.split("=")[1];
       const response = await axios.get(
-        `http://3.39.153.9:3000/todo/read?page=${page}`,
+        `http://localhost:8000/todo/read?page=${page}`,
         {
           headers: {
             "Content-Type": "application/json",

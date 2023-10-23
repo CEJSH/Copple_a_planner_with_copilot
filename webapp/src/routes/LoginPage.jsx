@@ -33,7 +33,7 @@ function LoginPage() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://3.39.153.9:3000/account/login",
+        "http://localhost:8000/account/login",
         {
           user_id: id,
           password: pw,

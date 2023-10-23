@@ -27,7 +27,7 @@ function GoalSchedule({ eventId }) {
       const tokenstring = document.cookie;
       const token = tokenstring.split("=")[1];
 
-      const url = `http://3.39.153.9:3000/event/groupByGoal/${eventId}`;
+      const url = `http://localhost:8000/event/groupByGoal/${eventId}`;
       axios
         .get(url, {
           headers: {

@@ -32,7 +32,7 @@ function Goal() {
     const token = tokenstring.split("=")[1];
     await axios({
       method: "get",
-      url: `http://3.39.153.9:3000/goal/read/${event_id}`,
+      url: `http://localhost:8000/goal/read/${event_id}`,
       withCredentials: false,
       headers: {
         "Access-Control-Allow-Origin": "*",
@@ -83,8 +83,8 @@ function Goal() {
       const tokenstring = document.cookie;
       const token = tokenstring.split("=")[1];
       const url = goalId
-        ? `http://3.39.153.9:3000/goal/${event}`
-        : `http://3.39.153.9:3000/goal/${event}`;
+        ? `http://localhost:8000/goal/${event}`
+        : `http://localhost:8000/goal/${event}`;
       await axios({
         method: method,
         url: url,

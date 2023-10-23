@@ -204,7 +204,7 @@ export const ChatRoom = () => {
   return (
     <div className={styles.ChatRoomRoot}>
       <div className={styles.ChatBar}>
-        <img style={{ height: "1.8em" }} src={copple}></img>
+        {/* <img style={{ height: "1.8em" }} src={copple}></img> */}
         <h3>Copple</h3>
       </div>
       <div ref={scrollViewTargetRef} className={styles.ChatRoomRootHistory}>

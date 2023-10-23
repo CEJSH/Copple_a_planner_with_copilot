@@ -63,7 +63,7 @@
 }
 
 .calendarDayNumber.today {
-  background-color: #ebd7ff;
+  background-color: #dbb6fc;
   width: 30px;
   color: black;
   height: 30px;
@@ -73,7 +73,7 @@
   border-radius: 50%;
   /* font-weight: 600; */
   text-align: center;
-  /* box-shadow: 0 0 0 5px #ebd7ff; */
+  /* box-shadow: 0 0 0 5px #dbb6fc; */
 }
 .calendarDay:hover .calendarDayNumber {
   font-weight: 600;
@@ -168,7 +168,7 @@
 }
 
 .selectedDay {
-  border: 0.5px solid #ebd7ff;
+  border: 0.5px solid #dbb6fc;
   width: 30px;
   color: black;
   height: 30px;
@@ -177,7 +177,7 @@
   justify-content: center;
   border-radius: 50%;
   text-align: center;
-  /* box-shadow: 0 0 0 5px #ebd7ff; */
+  /* box-shadow: 0 0 0 5px #dbb6fc; */
 }
 
 .addIcon {

@@ -50,7 +50,7 @@ export default function Home() {
     try {
       const response1 = await axios({
         method: "post",
-        url: "http://3.39.153.9:3000/account/find/id",
+        url: "http://localhost:8000/account/find/id",
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
@@ -65,7 +65,7 @@ export default function Home() {
 
       const response2 = await axios({
         method: "POST",
-        url: "http://3.39.153.9:3000/account/profile",
+        url: "http://localhost:8000/account/profile",
         withCredentials: false, // 쿠키를 사용하므로 true로 설정
         headers: {
           "Access-Control-Allow-Origin": "*",
@@ -95,7 +95,7 @@ export default function Home() {
   async function getData() {
     await axios({
       method: "GET",
-      url: "http://3.39.153.9:3000/goal/read",
+      url: "http://localhost:8000/goal/read",
       withCredentials: false, // 쿠키를 사용하므로 true로 설정
       headers: {
         "Access-Control-Allow-Origin": "*",

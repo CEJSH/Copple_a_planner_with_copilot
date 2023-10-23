@@ -28,7 +28,7 @@ function ProfilePhotoEdit() {
         const token = tokenstring.split("=")[1];
         await axios({
           method: "POST",
-          url: "http://3.39.153.9:3000/account/profile",
+          url: "http://localhost:8000/account/profile",
           withCredentials: false, // 쿠키를 사용하므로 true로 설정
           headers: {
             "Access-Control-Allow-Origin": "*",
@@ -61,7 +61,7 @@ function ProfilePhotoEdit() {
   const handleLogout = async () => {
     try {
       await axios
-        .post(`http://3.39.153.9:3000/account/logout`, null, {
+        .post(`http://localhost:8000/account/logout`, null, {
           headers: {
             Authorization: `Bearer ${token}`,
             "Access-Control-Allow-Origin": "*",
@@ -133,7 +133,7 @@ function ProfilePhotoEdit() {
       const token = tokenstring.split("=")[1];
       const response = await axios({
         method: "PUT",
-        url: "http://3.39.153.9:3000/account/profile",
+        url: "http://localhost:8000/account/profile",
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

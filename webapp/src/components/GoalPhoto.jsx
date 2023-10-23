@@ -39,7 +39,7 @@ function GoalPhoto({ eventId }) {
         const token = tokenString.split("=")[1];
 
         const response = await axios.delete(
-          `http://3.39.153.9:3000/goal/delete/${id}`,
+          `http://localhost:8000/goal/delete/${id}`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -60,7 +60,7 @@ function GoalPhoto({ eventId }) {
   };
   useEffect(() => {
     if (eventId) {
-      const goalUrl = `http://3.39.153.9:3000/goal/read/${eventId}`;
+      const goalUrl = `http://localhost:8000/goal/read/${eventId}`;
 
       axios
         .get(goalUrl, {

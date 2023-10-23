@@ -12,7 +12,7 @@ function UserPhoto() {
         const token = tokenstring.split("=")[1];
         await axios({
           method: "POST",
-          url: "http://3.39.153.9:3000/account/profile",
+          url: "http://localhost:8000/account/profile",
           withCredentials: false,
           headers: {
             "Access-Control-Allow-Origin": "*",
