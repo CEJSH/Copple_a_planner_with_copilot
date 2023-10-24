@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import axios from "axios";
 import styles from "../styles/Timeline.module.css";
 import styled from "styled-components";
+import { format } from "date-fns";
 
 const Timeline = ({ eventsProp = [] }) => {
   const [events, setEvents] = useState(eventsProp);
@@ -143,11 +144,7 @@ const Timeline = ({ eventsProp = [] }) => {
         >
           <div>
             <span className={styles["event-time"]}>
-              {new Date(event.startDatetime).toLocaleTimeString("ko-KR", {
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: false,
-              })}
+              {format(new Date(event.startDatetime), "HH:mm")}
             </span>
           </div>
           <div className={styles.inputwrapper}>
