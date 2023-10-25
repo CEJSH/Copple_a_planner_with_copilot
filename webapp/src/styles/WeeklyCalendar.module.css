@@ -100,11 +100,14 @@
 
   border: none;
   font-size: 20px;
-  fill: #9d9d9d;
+  fill: #e1e1e1;
   color: #9d9d9d;
   /* font-weight: 700; */
   cursor: pointer;
   outline: none;
+  &:hover {
+    fill: #aeaeae;
+  }
 }
 
 .calendarrightbutton {
@@ -112,11 +115,14 @@
   border: none;
   transform: scaleX(-1);
   font-size: 20px;
-  fill: #9d9d9d;
+  fill: #e1e1e1;
   color: #9d9d9d;
   cursor: pointer;
   outline: none;
   margin-left: 5px;
+  &:hover {
+    fill: #aeaeae;
+  }
 }
 
 .modal {

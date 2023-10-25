@@ -47,12 +47,13 @@
 .mainweeklyCalendar {
   position: absolute;
   top: 25px;
-  padding: 0 10px;
+  padding: 0 5px;
   width: 100%;
 }
 
 .mainThumbnails {
   margin-top: 130px;
+  width: 97%;
   padding-bottom: 20px;
   position: absolute;
   top: 180px;

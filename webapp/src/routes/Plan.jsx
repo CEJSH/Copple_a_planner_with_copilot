@@ -56,9 +56,8 @@ function Plan() {
         data: {
           title: data.title,
           startDatetime:
-            format(sdate, "yyyy-MM-dd ") + format(stime, "HH:mm:ss a"),
-          endDatetime:
-            format(edate, "yyyy-MM-dd ") + format(etime, "HH:mm:ss a"),
+            format(sdate, "yyyy-MM-dd ") + format(stime, "HH:mm:ss"),
+          endDatetime: format(edate, "yyyy-MM-dd ") + format(etime, "HH:mm:ss"),
           goal: data.goal,
           location: data.location,
           content: data.content,
